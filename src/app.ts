@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Route
 
-app.use("/static", express.static(path.join(__dirname, "assets")));
+app.use("/static", express.static(path.join(__dirname, "../assets")));
 
 app.get("/", (req: Request, res: Response) => {
   // res.send("Smart chat server running successfully!");
